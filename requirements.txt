@@ -1,0 +1,3 @@
+jax[cuda12]
+flax
+matplotlib
