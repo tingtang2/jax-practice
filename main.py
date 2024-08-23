@@ -13,7 +13,10 @@ def main():
                         default=42,
                         type=int,
                         help='random seed to be used in numpy')
-    parser.add_argument('--num_samples', default=20, type=int, help='numper')
+    parser.add_argument('--num_samples',
+                        default=20,
+                        type=int,
+                        help='number of samples')
 
     args = parser.parse_args()
     configs = args.__dict__

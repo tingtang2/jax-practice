@@ -2,18 +2,17 @@ from functools import partial
 from typing import Dict
 
 import jax
+import matplotlib.animation as animation
+import numpy as np
 import optax
 from flax import linen as nn
 from jax import Array, jit
 from jax import numpy as jnp
-import numpy as np
 from jax import random, value_and_grad
-from plotting_utils import plot_heatmap, heatmap_data
-
 from matplotlib import pyplot as plt
 
 from model import MLP, MLPwTime
-import matplotlib.animation as animation
+from plotting_utils import heatmap_data, plot_heatmap
 
 
 def better_sample_with_time(rng: Array, n_samples: int, model: nn.Module,

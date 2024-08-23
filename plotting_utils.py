@@ -1,5 +1,6 @@
+from jax import jit
 from jax import numpy as jnp
-from jax import vmap, jit
+from jax import vmap
 from matplotlib import pyplot as plt
 
 
