@@ -37,4 +37,5 @@ def plot_heatmap(positions, area_min=-2, area_max=2):
     ax = plt.gca()
     ax.invert_yaxis()
 
-    plt.savefig('heatmap_fig.png')
+    # plt.savefig('heatmap_fig.png')
+    return im
